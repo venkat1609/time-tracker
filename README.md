@@ -89,8 +89,6 @@ npm run dev
 Build for production
 npm run build
 
-text
-
 ### **Available Scripts**
 
 npm run dev # Start dev server with HMR
@@ -98,8 +96,6 @@ npm run build # Production build
 npm run preview # Preview production build
 npm run lint # Run ESLint
 npm run type-check # TypeScript validation
-
-text
 
 ## 🎯 Usage
 
@@ -122,22 +118,34 @@ text
 
 src/
 ├── components/ # React components
-│ ├── TimerDisplay/ # Main timer component
-│ ├── ControlButtons/ # Start/pause/resume controls
-│ ├── CurrentTaskPanel/ # Active task input panel
-│ ├── TaskTable/ # Completed tasks table
-│ ├── TaskTableRow/ # Individual table row
-│ └── SessionModal/ # Session details modal
-├── hooks/ # Custom React hooks
-│ ├── useTimer.tsx # Core timer logic + persistence
-│ └── useLocalStorage.tsx # localStorage utility hook
-├── shared/ # Shared utilities
-│ ├── types.tsx # TypeScript interfaces
-│ └── utils.tsx # Helper functions
-└── styles/
-└── TimeTracker.css # Component styles
 
-text
+│ ├── TimerDisplay/ # Main timer component
+
+│ ├── ControlButtons/ # Start/pause/resume controls
+
+│ ├── CurrentTaskPanel/ # Active task input panel
+
+│ ├── TaskTable/ # Completed tasks table
+
+│ ├── TaskTableRow/ # Individual table row
+
+│ └── SessionModal/ # Session details modal
+
+├── hooks/ # Custom React hooks
+
+│ ├── useTimer.tsx # Core timer logic + persistence
+
+│ └── useLocalStorage.tsx # localStorage utility hook
+
+├── shared/ # Shared utilities
+
+│ ├── types.tsx # TypeScript interfaces
+
+│ └── utils.tsx # Helper functions
+
+└── styles/
+
+└── TimeTracker.css # Component styles
 
 ## 🔧 Configuration
 
@@ -157,8 +165,6 @@ port: 3000,
 },
 })
 
-text
-
 ### **Theme Customization**
 
 Easily customize colors via CSS custom properties:
@@ -169,8 +175,6 @@ Easily customize colors via CSS custom properties:
 --pause: #9c88ff; / Paused state /
 --danger: #ff4567; / Stop/delete actions _/
 }
-
-text
 
 ## 📊 Performance
 
@@ -213,8 +217,6 @@ startTime: string; // ISO timestamp
 endTime: string | null; // ISO timestamp or null if active
 }
 
-text
-
 ## 📱 Screenshots
 
 ### Main Timer Interface
@@ -242,15 +244,13 @@ We welcome contributions! Please follow these steps:
 ### **Development Setup**
 
 Fork and clone your fork
-git clone https://github.com/your-username/react-time-tracker.git
+git clone https://github.com/venkat1609/time-tracker.git
 
 Install dependencies
 npm install
 
 Start dev server (with instant HMR)
 npm run dev
-
-text
 
 ## 📋 Roadmap
 
@@ -265,8 +265,8 @@ text
 
 Found a bug? Have a feature request?
 
-- **Bug Reports**: [Create an issue](https://github.com/yourusername/react-time-tracker/issues)
-- **Feature Requests**: [Start a discussion](https://github.com/yourusername/react-time-tracker/discussions)
+- **Bug Reports**: [Create an issue](https://github.com/venkat1609/time-tracker/issues)
+- **Feature Requests**: [Start a discussion](https://github.com/venkat1609/time-tracker/discussions)
 - **Questions**: Check existing issues or create a new one
 
 ## 📄 License
@@ -292,8 +292,8 @@ If this project helped you, please consider giving it a star!
 
 <div align="center">
 
-**Built with ❤️ and ⚡ by [Your Name](https://github.com/yourusername)**
+**Built with ❤️ and ⚡ by [Your Name](https://github.com/venkat1609)**
 
-[Demo](https://your-demo.vercel.app) • [Docs](https://github.com/yourusername/react-time-tracker/wiki) • [Report Bug](https://github.com/yourusername/react-time-tracker/issues) • [Request Feature](https://github.com/yourusername/react-time-tracker/issues)
+[Docs](https://github.com/venkat1609/time-tracker/wiki) • [Report Bug](https://github.com/venkat1609/time-tracker/issues) • [Request Feature](https://github.com/venkat1609/time-tracker/issues)
 
 </div>
