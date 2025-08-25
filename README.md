@@ -77,8 +77,8 @@ A modern, high-performance time tracking application built with **React + Vite +
 ### **Quick Start**
 
 Clone repository
-git clone https://github.com/yourusername/react-time-tracker.git
-cd react-time-tracker
+git clone https://github.com/venkat1609/time-tracker.git
+cd time-tracker
 
 Install dependencies
 npm install
@@ -286,7 +286,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 If this project helped you, please consider giving it a star!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/react-time-tracker&type=Date)](https://star-history.com/#yourusername/react-time-tracker&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=venkat1609/time-tracker&type=Date)](https://star-history.com/#venkat1609/time-tracker&Date)
 
 ---
 
