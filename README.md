@@ -292,7 +292,7 @@ If this project helped you, please consider giving it a star!
 
 <div align="center">
 
-**Built with ❤️ and ⚡ by [Your Name](https://github.com/venkat1609)**
+**Built with ❤️ and ⚡ by [Venkatesh Sridhar](https://github.com/venkat1609)**
 
 [Docs](https://github.com/venkat1609/time-tracker/wiki) • [Report Bug](https://github.com/venkat1609/time-tracker/issues) • [Request Feature](https://github.com/venkat1609/time-tracker/issues)
 
