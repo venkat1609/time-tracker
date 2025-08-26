@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://timetrackeronline.netlify.app/sitemap.xml
+
+# Crawl-delay (optional - 1 second between requests)
+Crawl-delay: 1

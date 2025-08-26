@@ -1,17 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Font loading with display=swap for better performance -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
       rel="stylesheet"
-    />
+      media="print"
+      onload="this.media='all'"
+    >
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet"
+      >
+    </noscript>
+
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Advanced React Time Tracker - Precision Timer with Pause/Resume | Free Productivity Tool</title>
+    <meta name="title" content="Advanced React Time Tracker - Precision Timer with Pause/Resume | Free Productivity Tool" />
+    <meta name="description" content="Modern time tracking app with session-based tracking, pause/resume functionality, and persistent storage. Built with React + Vite + SWC for lightning-fast performance. Track work time, manage tasks, and boost productivity." />
+    <meta name="keywords" content="time tracker, productivity app, react timer, work tracker, task management, pomodoro timer, time management, productivity tool, session tracking, pause resume timer" />
+    <meta name="author" content="Venkatesh Sridhar" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="1 days" />
+
+    <!-- Theme and Browser -->
+    <meta name="theme-color" content="#53b7ff" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Time Tracker" />
+    <meta name="application-name" content="React Time Tracker" />
+    <meta name="msapplication-TileColor" content="#1a1f2b" />
+
+
+    <!-- Favicons and Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#53b7ff" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://timetrackeronline.netlify.app/" />
+
+    <!-- DNS Prefetch for better performance -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "React Time Tracker",
+      "alternateName": "Advanced Time Tracker",
+      "description": "Modern time tracking application with session-based tracking, pause/resume functionality, and persistent storage built with React.",
+      "url": "https://timetrackeronline.netlify.app/",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Web Browser",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "softwareVersion": "1.0",
+      "datePublished": "2025-08-26",
+      "author": {
+        "@type": "Person",
+        "name": "Venkatesh Sridhar",
+        "url": "https://github.com/venkat1609"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "screenshot": "https://timetrackeronline.netlify.app/screenshot.png",
+      "featureList": [
+        "Precision time tracking with millisecond accuracy",
+        "Session-based work and pause period tracking",
+        "Persistent storage across browser sessions",
+        "Real-time timer with smooth animations",
+        "Task management and editing capabilities",
+        "Mobile responsive design",
+        "Dark theme interface"
+      ]
+    }
+    </script>
+
+    <!-- Performance and Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-eval'; img-src 'self' data: https:;" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/src/main.tsx" as="script" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&family=JetBrains+Mono:wght@400;500;700&display=swap" />
   </head>
   <body>
-    <div id="root"></div>
+    <!-- App container with fallback content for no-JS users -->
+    <div id="root">
+      <noscript>
+        <div style="text-align: center; padding: 50px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+          <h1>JavaScript Required</h1>
+          <p>This React Time Tracker application requires JavaScript to function properly.</p>
+          <p>Please enable JavaScript in your browser settings and reload the page.</p>
+        </div>
+      </noscript>
+      
+      <!-- Loading fallback for better perceived performance -->
+      <div id="loading-fallback" style="display: flex; justify-content: center; align-items: center; min-height: 100vh; font-family: 'Raleway', sans-serif; background: #1a1f2b; color: #e0e5ee;">
+        <div style="text-align: center;">
+          <div style="width: 50px; height: 50px; border: 4px solid #44495c; border-top: 4px solid #53b7ff; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px;"></div>
+          <p style="margin: 0; font-size: 18px; color: #99aabb;">Loading Time Tracker...</p>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      /* Hide loading fallback when app loads */
+      #root:not(:empty) #loading-fallback {
+        display: none !important;
+      }
+    </style>
+
+    <!-- Main application script -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
