@@ -7,6 +7,7 @@ import { SessionModal } from "../SessionModal/SessionModal";
 import { useTimer } from "../../hooks/useTimer";
 import { parseInputDateTime, validateTimeRange } from "../../shared/utils";
 import "./TimeTracker.css";
+import AdBanner from "../AdBanner/AdBanner";
 
 const TimeTracker: React.FC = () => {
   const {
@@ -72,6 +73,7 @@ const TimeTracker: React.FC = () => {
         rel="stylesheet"
       />
 
+      <AdBanner slot="1234567890" style={{ margin: "16px 0" }} />
       {currentTask && (
         <TimerDisplay
           currentTask={currentTask}
